@@ -1,0 +1,630 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bord",
+				"border-box"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"slider-heading",
+				"slider-heading-2"
+			],
+			[
+				"startSlide",
+				"startSlideNo"
+			],
+			[
+				"ends",
+				"endSlideNo"
+			],
+			[
+				"endSlide",
+				"endSlideNo"
+			],
+			[
+				"ease",
+				"ease-in"
+			],
+			[
+				"this",
+				"thisSlideNo"
+			],
+			[
+				"nex",
+				"nextSlideNo"
+			],
+			[
+				"thi",
+				"thisSlideNo"
+			],
+			[
+				"tp-",
+				"tp-leftarrow"
+			],
+			[
+				"am--txt",
+				"am--txt-cont__solo"
+			],
+			[
+				"backgru",
+				"background-color"
+			],
+			[
+				"am--",
+				"am--main-cont"
+			],
+			[
+				"ts--arr",
+				"ts--arrow-left"
+			],
+			[
+				"ts--arrow",
+				"ts--arrow-stem"
+			],
+			[
+				"ts",
+				"ts--txt-cont"
+			],
+			[
+				"space",
+				"space-between"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"Rea",
+				"ReactDOM\t(index.html)"
+			],
+			[
+				"availableSizes",
+				"availableSizes"
+			],
+			[
+				"html",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"flex-",
+				"flex-flow"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"Timeline",
+				"TimelineMax"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"script",
+				"script\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "max-221118.html",
+			"settings":
+			{
+				"buffer_size": 5343,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 592.0
+	},
+	"console":
+	{
+		"height": 91.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup"
+	],
+	"file_history":
+	[
+		"/Users/james/Library/Preferences/Adobe Photoshop CC 2019 Settings/PSUserConfig.txt",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/dev/sass/styles.scss",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/max-new-new-2.html",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/max-new.html",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/tothemax.html",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/test.html",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/gulpfile.js",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/prod/css/styles.css",
+		"/Volumes/brandformula/Current Work/01_WHJE_CURRENT JOBS_BACKUP_REFERENCE/WHJE/WH009_ToTheMax_brand_development/website-mockup/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/halloween-2018-landing-form/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/halloween-2018-landing-form/landing.html",
+		"/Users/james/Documents/Jim's Stuff/Web/halloween-2018-landing-form/indexOLD.html",
+		"/Volumes/brandformula/Current Work/01_WHJE_CURRENT JOBS_BACKUP_REFERENCE/BRANDFORMULA/BF466 - Digital Comms Support/halloween-quiz-2018/html/BF416_halloween_quiz_2018/assets/player/string.js",
+		"/Volumes/brandformula/Current Work/01_WHJE_CURRENT JOBS_BACKUP_REFERENCE/BRANDFORMULA/BF466 - Digital Comms Support/halloween-quiz-2018/html/BF416_halloween_quiz_2018/assets/player/KeynoteDHTMLPlayer.html",
+		"/Users/james/Downloads/video-carousel-test--prod-ready.html",
+		"/Users/james/Documents/Jim's Stuff/Web/video-carousel-test/video-carousel-test.html",
+		"/Users/james/Documents/Jim's Stuff/Web/bf-website-2018/amrae-eng.html",
+		"/Users/james/.npm/_logs/2018-10-16T11_31_21_367Z-debug.log",
+		"/Users/james/Documents/Jim's Stuff/Sites/three-tests/three-tests.html",
+		"/Volumes/brandformula/Current Work/ES RISKS/ES008-Website_dev_SEP18/assets/header-elmnts/header-heros.html",
+		"/Volumes/brandformula/Current Work/ES RISKS/ES008-Website_dev_SEP18/assets/code-snippets.html",
+		"/Users/james/Desktop/tester.html",
+		"/Volumes/brandformula/Current Work/ES RISKS/ES008-Website_dev_SEP18/assets/header-elmnts/carousel-code.html",
+		"/Users/james/Documents/Jim's Stuff/Sites/ESRISKS-Carousel/carousel-test.html",
+		"/Users/james/Documents/Jim's Stuff/Web/bf-website-2018/fidelity-test.html",
+		"/Users/james/Documents/Jim's Stuff/Web/spotify-tests/authorization_code/app.js",
+		"/Users/james/Documents/Jim's Stuff/Web/spotify-tests/authorization_code/public/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/spotify-tests/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/spotify-tests/assets/njtest/server.js",
+		"/Users/james/Documents/Jim's Stuff/Web/spotify-tests/assets/app.js",
+		"/Users/james/Documents/Jim's Stuff/Web/reactjs/Ch03/03_08/start/rtg-snippet.html",
+		"/Users/james/Documents/Jim's Stuff/Web/reactjs/Ch03/03_07/start/updatePeopleList.js",
+		"/Users/james/Documents/Jim's Stuff/Web/reactjs/assets/ch02-inventory.js",
+		"/Users/james/Documents/Jim's Stuff/Web/reactjs/Ch02/wip/start/mockup.html",
+		"/Users/james/Documents/Jim's Stuff/Web/reactjs/Ch02/wip/start/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/reactjs/Ch02/wip/start/app.js",
+		"/Users/james/Documents/Jim's Stuff/Web/reactjs/Ch02/02_05/start/inventory-snippet.html",
+		"/Users/james/Documents/Jim's Stuff/Web/reactjs/Ch02/02_04/start/babel-snippet.html",
+		"/Users/james/Documents/Jim's Stuff/Web/Ex_Files_React_Designers/Ch02/wip/start/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/Ex_Files_React_Designers/Ch02/wip/start/mockup.html",
+		"/Users/james/Documents/Jim's Stuff/Web/Ex_Files_React_Designers/Ch02/wip/start/app.js",
+		"/Users/james/Documents/Jim's Stuff/Web/Ex_Files_React_Designers/Ch02/02_04/start/babel-snippet.html",
+		"/Users/james/Documents/Jim's Stuff/Web/Ex_Files_React_Designers/Ch02/02_04/end/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/Ex_Files_React_Designers/Ch02/02_04/end/babel-snippet.html",
+		"/private/etc/profile",
+		"/private/etc/bashrc",
+		"/Users/james/.npmrc",
+		"/Users/james/Documents/Jim's Stuff/Web/package-lock.json",
+		"/Users/james/Desktop/fullcirclecommunications.wordpress.2018-07-12.xml",
+		"/Users/james/Downloads/fullcirclecommunications.wordpress.2018-07-13.xml",
+		"/Users/james/Documents/Jim's Stuff/Web/SELF-INDULGENCE/Cubes/cubes-2.html",
+		"/Users/james/Documents/Jim's Stuff/Web/SELF-INDULGENCE/Rain/index.html",
+		"/Users/james/Downloads/Takeout/Location History/Location History.json",
+		"/Users/james/Downloads/Takeout/Hangouts/Hangouts.json",
+		"/Users/james/Downloads/Takeout/Google My Business/account-101989142917923791875/data.json",
+		"/Users/james/Downloads/Takeout/Chrome/BrowserHistory.json",
+		"/Users/james/Desktop/index.html",
+		"/Users/james/Downloads/index.html",
+		"/Users/james/Desktop/es-risk-landing/index.html",
+		"/Volumes/brandformula/Current Work/FARILLIO/FAR004_MONTHLY INFOGRAPHIC SUPPORT/ALL-FINISHED-INFOGRAPHICS/Feb/FAR004-slot2-1C-how_to_share_confidential_info-160218-01.svg",
+		"/Volumes/brandformula/Current Work/GREENLIGHT/GRE004-Website/assets/code-snippets/investment-returns-table.html",
+		"/Users/james/Documents/Jim's Stuff/Web/farillio-mock-infographics/Farillio.html",
+		"/System/Library/Caches/com.apple.coresymbolicationd/data",
+		"/Volumes/brandformula/Current Work/LOCKTON/LO004 Airmic Dinner Invite/Lockton_Airmic_Dinner-2018.html",
+		"/Users/james/Documents/Jim's Stuff/Web/SELF-INDULGENCE/Glitch Effect Tut/source/css/demo1.css",
+		"/Users/james/Documents/Jim's Stuff/Web/SELF-INDULGENCE/Glitch Effect Tut/source/js/demo.js",
+		"/Users/james/Documents/Jim's Stuff/Web/SELF-INDULGENCE/Glitch Effect Tut/source/js/imagesloaded.pkgd.min.js",
+		"/Users/james/Documents/Jim's Stuff/Web/SELF-INDULGENCE/Glitch Effect Tut/source/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/SELF-INDULGENCE/Glitch Effect Tut/glitch-test.html",
+		"/Users/james/Documents/Jim's Stuff/Web/SELF-INDULGENCE/Glitch Effect Tut/source/index2.html",
+		"/Users/james/Documents/Jim's Stuff/Web/Rain/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/email-thingy/Lockton_Airmic_Dinner-2018.htm",
+		"/Users/james/Documents/Jim's Stuff/Web/bf-slot_machine_tests/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/email-thingy/You are invited to The Lockton Airmic Dinner 2017.htm",
+		"/Users/james/Desktop/Jim's Stuff/Web/Rain/index.html",
+		"/Users/james/Documents/To Transfer/Elite Ships/crimson_carrion.json",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/User/untitled.html",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/Default (OSX).sublime-keymap",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/User/untitled2.html",
+		"/Users/james/Library/Application Support/Sublime Text 3/Packages/User/ThemrFavorites.sublime-settings",
+		"/Users/james/Desktop/untitled.html"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "max-221118.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										14,
+										15
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/angle_bracket.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										14,
+										15
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/angle_bracket.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Spacegray Eighties (SL).tmTheme",
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 68.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tothemax.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -16,7 +16,7 @@ gulp.task('sass', function() {
 		            browsers: ['last 3 versions'],
 		            cascade: false
 		        }))
-			   .pipe(cssnano())
+			   .pipe(cssnano({ zindex: false }))
 			   .pipe(gulp.dest(bld + 'css/'))
 });
 

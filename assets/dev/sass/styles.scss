@@ -94,21 +94,25 @@ nav#main-nav {
 	box-sizing: border-box;
 	margin: 0 2vw;
 
-	width: 12em;
+	cursor: pointer;
+
+	z-index: 100;
+	position: relative;
+
+	/* width: 12em;*/
 	max-width: 15vw;
 	text-align: center;
-	transition: border 0.618s ease-in-out;
-
+	
 	span:after {
 		content: "";
 		transition: width .618s ease-in-out;
 		height: 1px;
-		background-color: #fff;
+		background: linear-gradient(to right, rgb(254,203,0), rgb(201,61,10));
 		width: 0;
 		display: block;
 		margin: 0 auto;
 		margin-top: .2em;
-
+		cursor: pointer;
 	}
 
 	&:hover {
@@ -119,6 +123,10 @@ nav#main-nav {
 
 	&:not(.max-logo) {
 		margin-top: 1.618em;
+
+		&:active {
+			top: 1px;
+		}
 	}
 
 	&.max-logo {
@@ -381,4 +389,56 @@ iframe.hero-vid {
 img.slide-img {
 	width: 100vw;
 	height: auto;
+}
+
+%arw {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+
+	cursor: pointer;
+
+	width: 5vw;
+	z-index: 100;
+
+	max-width: 50px;
+	transition: fill .3s ease, -webkit-transform .1s ease-in-out;
+	transition: fill .3s ease, transform .1s ease-in-out;
+	transition: fill .3s ease, transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
+	
+	polygon {
+		cursor: pointer;
+	}
+
+	&.arw_wht {
+		fill: rgba(255,255,255,.7);
+
+		&:hover {
+			fill: rgba(255,255,255,1);
+		}
+		&:active {
+			fill: rgba(150,150,150,1);
+		}
+	}
+
+	&:hover {
+		-webkit-transform: translateY(-2px);
+		        transform: translateY(-2px);
+	}
+
+	&:active {
+		-webkit-transform: translateY(1px);
+		        transform: translateY(1px);
+	}
+}
+
+.arw-r {
+	@extend %arw;
+	right: 1rem;
+}
+
+.arw-l {
+	@extend %arw;
+	left: 1rem;
 }

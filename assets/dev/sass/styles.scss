@@ -130,6 +130,13 @@ nav#main-nav {
 
 
 /*-- MAIN LAYOUT -------*/
+.mb-xxlrg	{ margin-bottom: 4.236em; }
+.mb-xlrg	{ margin-bottom: 3.4em; }
+.mb-lrg		{ margin-bottom: 2.618em; }
+.mb-mid		{ margin-bottom: 1.618em; }
+.mb-sml		{ margin-bottom: 1em; }
+.mb-xsml	{ margin-bottom: .8em; }
+
 .drk-overlay {
 	position: absolute;
 	top: 0;
@@ -158,8 +165,11 @@ nav#main-nav {
 	align-items: center;
 
 	p {
-		max-width: 35em;
 		line-height: 1.2em;
+	}
+
+	p.txt--min-w {
+		max-width: 35em;
 	}
 }
 
@@ -168,8 +178,11 @@ nav#main-nav {
 
 	p {
 		width: 100%;
-		max-width: 45rem;
 		line-height: .8em;
+	}
+
+	p.txt--min-w {
+		max-width: 45rem;
 	}
 }
 
@@ -233,6 +246,7 @@ iframe.hero-vid {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	align-items: baseline;
 	
 	width: 100%;
 	margin: 0 auto;
@@ -240,8 +254,14 @@ iframe.hero-vid {
 
 .col-4 {
 	width: 100%;
-	max-width: 22vw;
-	flex-basis: 22vw;
+	max-width: 19vw;
+	flex-basis: 19vw;
+}
+
+.col-4__mw {
+	@extend .col-4;
+
+	min-width: 19em;
 }
 
 

@@ -1,4 +1,5 @@
 
+//-- JS DOCUMENT READY ------
 function ready(fn) {
   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
     fn();
@@ -7,6 +8,7 @@ function ready(fn) {
   }
 }
 
+//-- ANIMATION FUNC FOR TO THE MAX --------
 function toTheMaxVid() {
 	var vidCont =		document.getElementById('to-the-max--cont');
 	var vid = 			document.getElementById('max-video');
@@ -55,4 +57,72 @@ function toTheMaxVid() {
     }
 }
 
+//-- CAROUSEL LOGIC ---------------------
+    //-- CLOSEST POLYFILL --
+    if (!Element.prototype.matches)
+    {
+    	Element.prototype.matches = Element.prototype.msMatchesSelector || 
+                                Element.prototype.webkitMatchesSelector;
+	}
+
+	if (!Element.prototype.closest) {
+	    Element.prototype.closest = function(s) {
+	        var el = this;
+	        if (!document.documentElement.contains(el)) return null;
+	        do {
+	            if (el.matches(s)) return el;
+	            el = el.parentElement || el.parentNode;
+	        } while (el !== null && el.nodeType === 1); 
+	        return null;
+	    };
+	}
+	// }--EOF POLYFILL
+
+
+
+function carouselSlider() {
+	var arw = document.getElementsByClassName('arw');
+
+	for (i=0; i<arw.length; i++)
+	{
+		arw[i].addEventListener('click',arwClicked,false);
+	}
+
+	function arwClicked(e)
+	{
+		var dir; 
+		if (e.srcElement.parentNode.classList.contains('arw-r'))
+			dir = 'right';
+		else
+			dir = 'left';
+
+		var sliderCont = 		e.srcElement.closest('.slider--cont').id;
+		var noOfSlides = 		document.querySelectorAll('#' + sliderCont + ' .slide').length;
+		var currentSlide = 		document.querySelectorAll('#' + sliderCont + ' .slide--active');
+		var currentSlideNo = 	currentSlide[0].dataset.slideNo;
+
+		if (dir === 'right')
+		{
+			var nextSlideNo =		Number(currentSlideNo) + 1;
+			if (nextSlideNo > noOfSlides) 
+				nextSlideNo = 1;
+			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);	
+		}
+		else if (dir === 'left')
+		{
+			var nextSlideNo =		Number(currentSlideNo) - 1;
+			if (nextSlideNo < 1) 
+				nextSlideNo = noOfSlides;
+			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);
+		}
+
+		currentSlide[0].classList.remove('slide--active');
+		nextSlide[0].classList.add('slide--active');
+
+	}
+}
+
+
+
 ready(toTheMaxVid);
+ready(carouselSlider);

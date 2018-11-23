@@ -313,6 +313,7 @@ iframe.hero-vid {
 	opacity: 0;
 }
 
+
 /*-- CAROUSEL/SLIDER ----*/
 .slider--cont {
 	position: relative;
@@ -343,13 +344,31 @@ iframe.hero-vid {
 
 	height: 30rem;
 	width: 30rem;
-	max-height: 40vw;
-	max-width: 40vw;
+	max-height: 45vw;
+	max-width: 45vw;
 
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width: 1000px)
+{
+	.slide-txt--cont {
+		height: auto;
+		width: 100%;
+		max-height: none;
+		max-width: none;
+
+		padding: 4.236em 1.618em;
+
+		position: relative;
+
+		& p {
+			max-width: 32em;
+		}
+	}
 }
 
 .slide-heading {

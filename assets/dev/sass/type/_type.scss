@@ -1,0 +1,37 @@
+//-- TYPEFACE --------------- 
+$heading: "Montserrat", sans-serif;
+
+/*-- MAIN TYPE ----------*/
+h1, h2, h3, h4, h5 ,h6, .heading {
+	font-family: $heading;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+p, .body {
+	font-family: Arial, sans-serif;
+}
+
+.bold {
+	font-style: normal;
+	font-weight: 700;
+}
+
+
+.h-xuberlrg	{ font-size: 20vw; }
+.h-uberlrg	{ font-size: 10vw; }
+
+.h-xxlrg	{ font-size: 4.236rem; }
+.h-xlrg		{ font-size: 3.4rem; }
+.h-lrg		{ font-size: 2.618rem; }
+.h-mid		{ font-size: 1.618rem; }
+.h-sml		{ font-size: 1rem; }
+.h-xsml		{ font-size: .8rem; }
+
+.txt-xxlrg	{ font-size: 2.618rem; }
+.txt-xlrg	{ font-size: 1.618rem; }
+.txt-lrg	{ font-size: 1.3rem; }
+.txt-mid	{ font-size: 1rem; }
+.txt-sml	{ font-size: .8rem; }
+.txt-xsml	{ font-size: .618rem; }
+.txt-xxsml	{ font-size: .4rem; }

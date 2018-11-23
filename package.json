@@ -9,9 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9"
   },
   "dependencies": {
     "gulp-cssnano": "^2.1.3"

@@ -367,33 +367,18 @@ iframe.hero-vid {
 }
 
 .slide-1 {
-	-webkit-transform: translateX(-100%);
-	        transform: translateX(-100%);
-
-	&.slide--active {
-		-webkit-transform: translateX(0);
-		        transform: translateX(0);
-	}
+	-webkit-transform: translateX(0%);
+	        transform: translateX(0%);
 }
 
 .slide-2 {
 	-webkit-transform: translateX(100%);
 	        transform: translateX(100%);
-
-	&.slide--active {
-		-webkit-transform: translateX(0);
-		        transform: translateX(0);
-	}
 }
 
 .slide-3 {
 	-webkit-transform: translateX(200%);
 	        transform: translateX(200%);
-
-	&.slide--active {
-		-webkit-transform: translateX(0);
-		        transform: translateX(0);
-	}
 }
 
 .slide-txt--cont {

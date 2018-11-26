@@ -97,7 +97,8 @@ function carouselSlider() {
 			dir = 'left';
 
 		var sliderCont = 		e.srcElement.closest('.slider--cont').id;
-		var noOfSlides = 		document.querySelectorAll('#' + sliderCont + ' .slide').length;
+		var allSlides =			document.querySelectorAll('#' + sliderCont + ' .slide');
+		var noOfSlides = 		allSlides.length;
 		var currentSlide = 		document.querySelectorAll('#' + sliderCont + ' .slide--active');
 		var currentSlideNo = 	currentSlide[0].dataset.slideNo;
 
@@ -106,7 +107,25 @@ function carouselSlider() {
 			var nextSlideNo =		Number(currentSlideNo) + 1;
 			if (nextSlideNo > noOfSlides) 
 				nextSlideNo = 1;
-			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);	
+			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);
+
+			if (nextSlideNo !== 1)
+			{
+				currentSlide[0].style.transform = "translateX(-100%)";
+				currentSlide[0].classList.remove('slide--active');
+				nextSlide[0].style.transform = "translateX(0%)";
+				nextSlide[0].classList.add('slide--active');
+			}
+			else {
+				currentSlide[0].classList.remove('slide--active');
+				nextSlide[0].classList.add('slide--active');
+
+				for (item in allSlides)
+				{
+					if (item <= noOfSlides)
+						allSlides[item].removeAttribute("style");
+				}
+			}
 		}
 		else if (dir === 'left')
 		{
@@ -114,15 +133,34 @@ function carouselSlider() {
 			if (nextSlideNo < 1) 
 				nextSlideNo = noOfSlides;
 			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);
+
+			if (nextSlideNo !== noOfSlides)
+			{
+				currentSlide[0].style.transform = "translateX(100%)";
+				nextSlide[0].style.transform = "translateX(0%)";
+				currentSlide[0].classList.remove('slide--active');
+				nextSlide[0].classList.add('slide--active');
+			}
+			else {
+				currentSlide[0].classList.remove('slide--active');
+				nextSlide[0].classList.add('slide--active');
+
+				for (item in allSlides)
+				{
+					if (item == (noOfSlides -1))
+						allSlides[item].style.transform = "translateX(0%)";
+					else if (item < (noOfSlides - 1))
+						allSlides[item].style.transform = "translateX(-100%)";
+				}
+			}
 		}
 
-		currentSlide[0].classList.remove('slide--active');
-		nextSlide[0].classList.add('slide--active');
+		
 
 	}
 }
 
 
-
+//-- ON DOC READY FNCs -----------
 ready(toTheMaxVid);
 ready(carouselSlider);

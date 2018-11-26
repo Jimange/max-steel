@@ -76,7 +76,14 @@ function toTheMaxVid() {
 	        return null;
 	    };
 	}
-	// }--EOF POLYFILL
+	//--EOF POLYFILL
+
+	//-- COLOR CHNAGE FNC -------
+	function changeBgCol(targets,col) {
+		for (item in targets)
+			if (targets[item].classList)
+				targets[item].className = "section--cont bg-toggle bg-" + col;
+	}
 
 
 
@@ -101,6 +108,7 @@ function carouselSlider() {
 		var noOfSlides = 		allSlides.length;
 		var currentSlide = 		document.querySelectorAll('#' + sliderCont + ' .slide--active');
 		var currentSlideNo = 	currentSlide[0].dataset.slideNo;
+		var toggleColor =		document.getElementsByClassName('bg-toggle');
 
 		if (dir === 'right')
 		{
@@ -108,6 +116,7 @@ function carouselSlider() {
 			if (nextSlideNo > noOfSlides) 
 				nextSlideNo = 1;
 			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);
+			var nextSlideCol =		nextSlide[0].dataset.slideColor;
 
 			if (nextSlideNo !== 1)
 			{
@@ -126,6 +135,8 @@ function carouselSlider() {
 						allSlides[item].removeAttribute("style");
 				}
 			}
+
+			changeBgCol(toggleColor, nextSlideCol);
 		}
 		else if (dir === 'left')
 		{
@@ -133,6 +144,7 @@ function carouselSlider() {
 			if (nextSlideNo < 1) 
 				nextSlideNo = noOfSlides;
 			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);
+			var nextSlideCol =		nextSlide[0].dataset.slideColor;
 
 			if (nextSlideNo !== noOfSlides)
 			{
@@ -154,9 +166,6 @@ function carouselSlider() {
 				}
 			}
 		}
-
-		
-
 	}
 }
 

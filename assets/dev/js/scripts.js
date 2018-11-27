@@ -97,12 +97,7 @@ function carouselSlider() {
 
 	function arwClicked(e)
 	{
-		var dir; 
-		if (e.srcElement.parentNode.classList.contains('arw-r'))
-			dir = 'right';
-		else
-			dir = 'left';
-
+		var dir = e.srcElement.parentNode.dataset.arwDir;
 		var sliderCont = 		e.srcElement.closest('.slider--cont').id;
 		var allSlides =			document.querySelectorAll('#' + sliderCont + ' .slide');
 		var noOfSlides = 		allSlides.length;
@@ -136,7 +131,8 @@ function carouselSlider() {
 				}
 			}
 
-			changeBgCol(toggleColor, nextSlideCol);
+			if (nextSlideCol !== null && nextSlideCol !== undefined)
+				changeBgCol(toggleColor, nextSlideCol);
 		}
 		else if (dir === 'left')
 		{
@@ -165,6 +161,9 @@ function carouselSlider() {
 						allSlides[item].style.transform = "translateX(-100%)";
 				}
 			}
+
+			if (nextSlideCol !== null && nextSlideCol !== undefined)
+				changeBgCol(toggleColor, nextSlideCol);
 		}
 	}
 }

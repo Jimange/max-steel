@@ -60,14 +60,45 @@ function toTheMaxVid() {
 				targets[item].className = "section--cont bg-toggle bg-" + col;
 	}
 
+	//-- IS VISIBLE -----
+	$.fn.isInViewport = function() {
+	    var elementTop = $(this).offset().top;
+	    var elementBottom = elementTop + $(this).outerHeight();
+
+	    var viewportTop = $(window).scrollTop();
+	    var viewportBottom = viewportTop + $(window).height();
+
+	    return elementBottom > viewportTop && elementTop < viewportBottom;
+	};
+
 
 
 function carouselSlider() {
 	var arw = $('.arw');
 	for (i=0; i<arw.length; i++)
 	{
-		arw[i].addEventListener('click',arwClicked,false);
+		// arw[i].addEventListener('click',arwClicked,false);
+		$(arw[i]).on('click', arwClicked);
 	}
+
+	function autoplaySlider()
+	{
+		function clickArw(trgt) {
+			var arwClick = 	$(trgt).find('.arw-r'),
+				arwHover = 	arwClick.filter(':hover').length,
+				inView =	$(trgt).isInViewport();
+
+			if (arwHover !== 1 && inView)
+				arwClick.click();
+		}
+		var sliderConts = $('.slider--cont[data-slider="autoplay"]');
+		for (i=0; i < sliderConts.length; i++)
+		{
+			setInterval(clickArw,6000,sliderConts[i]);
+		}
+	}
+
+	autoplaySlider();
 
 	function arwClicked()
 	{

@@ -1,13 +1,3 @@
-
-//-- JS DOCUMENT READY ------
-function ready(fn) {
-  if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
-
 //-- ANIMATION FUNC FOR TO THE MAX --------
 function toTheMaxVid() {
 	var vidCont =		document.getElementById('to-the-max--cont');
@@ -62,25 +52,6 @@ function toTheMaxVid() {
 
 
 //-- CAROUSEL LOGIC ---------------------
-    //-- CLOSEST POLYFILL --
-    if (!Element.prototype.matches)
-    {
-    	Element.prototype.matches = Element.prototype.msMatchesSelector || 
-                                Element.prototype.webkitMatchesSelector;
-	}
-
-	if (!Element.prototype.closest) {
-	    Element.prototype.closest = function(s) {
-	        var el = this;
-	        if (!document.documentElement.contains(el)) return null;
-	        do {
-	            if (el.matches(s)) return el;
-	            el = el.parentElement || el.parentNode;
-	        } while (el !== null && el.nodeType === 1); 
-	        return null;
-	    };
-	}
-	//--EOF POLYFILL
 
 	//-- COLOR CHNAGE FNC -------
 	function changeBgCol(targets,col) {
@@ -92,87 +63,33 @@ function toTheMaxVid() {
 
 
 function carouselSlider() {
-	var arw = document.getElementsByClassName('arw');
-
+	var arw = $('.arw');
 	for (i=0; i<arw.length; i++)
 	{
 		arw[i].addEventListener('click',arwClicked,false);
 	}
 
-	function arwClicked(e)
+	function arwClicked()
 	{
-		var dir = e.srcElement.parentNode.dataset.arwDir;
-		var sliderCont = 		e.srcElement.closest('.slider--cont').id;
-		var allSlides =			document.querySelectorAll('#' + sliderCont + ' .slide');
-		var noOfSlides = 		allSlides.length;
-		var currentSlide = 		document.querySelectorAll('#' + sliderCont + ' .slide--active');
-		var currentSlideNo = 	currentSlide[0].dataset.slideNo;
-		var toggleColor =		document.getElementsByClassName('bg-toggle');
+		var dir = 				$(this).attr('data-arw-dir');
+		var thisSliderCont =	$(this).closest('.slider--cont').attr('id');
+		var thisSlideNo =		$('#' + thisSliderCont + ' .slide--active').attr('data-slide-no');
+		thisSlideNo = 			Number(thisSlideNo);
+		var nextSlideNo;
 
-		if (dir === 'right')
-		{
-			var nextSlideNo =		Number(currentSlideNo) + 1;
-			if (nextSlideNo > noOfSlides) 
-				nextSlideNo = 1;
-			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);
-			var nextSlideCol =		nextSlide[0].dataset.slideColor;
+		if (dir === "right")
+			nextSlideNo = thisSlideNo + 1;
+		else if (dir === "left")
+			nextSlideNo = thisSlideNo -1;
 
-			if (nextSlideNo !== 1)
-			{
-				currentSlide[0].style.transform = "translateX(-100%)";
-				currentSlide[0].classList.remove('slide--active');
-				nextSlide[0].style.transform = "translateX(0%)";
-				nextSlide[0].classList.add('slide--active');
-			}
-			else {
-				currentSlide[0].classList.remove('slide--active');
-				nextSlide[0].classList.add('slide--active');
-
-				for (item in allSlides)
-				{
-					if (item <= noOfSlides)
-						allSlides[item].removeAttribute("style");
-				}
-			}
-
-			if (nextSlideCol !== null && nextSlideCol !== undefined)
-				changeBgCol(toggleColor, nextSlideCol);
-		}
-		else if (dir === 'left')
-		{
-			var nextSlideNo =		Number(currentSlideNo) - 1;
-			if (nextSlideNo < 1) 
-				nextSlideNo = noOfSlides;
-			var nextSlide =			document.querySelectorAll('#' + sliderCont + ' .slide-' + nextSlideNo);
-			var nextSlideCol =		nextSlide[0].dataset.slideColor;
-
-			if (nextSlideNo !== noOfSlides)
-			{
-				currentSlide[0].style.transform = "translateX(100%)";
-				nextSlide[0].style.transform = "translateX(0%)";
-				currentSlide[0].classList.remove('slide--active');
-				nextSlide[0].classList.add('slide--active');
-			}
-			else {
-				currentSlide[0].classList.remove('slide--active');
-				nextSlide[0].classList.add('slide--active');
-
-				for (item in allSlides)
-				{
-					if (item == (noOfSlides -1))
-						allSlides[item].style.transform = "translateX(0%)";
-					else if (item < (noOfSlides - 1))
-						allSlides[item].style.transform = "translateX(-100%)";
-				}
-			}
-
-			if (nextSlideCol !== null && nextSlideCol !== undefined)
-				changeBgCol(toggleColor, nextSlideCol);
-		}
+		console.log(nextSlideNo);
 	}
 }
 
 
 //-- ON DOC READY FNCs -----------
-ready(toTheMaxVid);
-ready(carouselSlider);
+$(document).ready(function()
+{
+	toTheMaxVid();
+	carouselSlider();
+});

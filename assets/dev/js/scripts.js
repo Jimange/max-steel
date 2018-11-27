@@ -72,17 +72,41 @@ function carouselSlider() {
 	function arwClicked()
 	{
 		var dir = 				$(this).attr('data-arw-dir');
-		var thisSliderCont =	$(this).closest('.slider--cont').attr('id');
-		var thisSlideNo =		$('#' + thisSliderCont + ' .slide--active').attr('data-slide-no');
+		var thisSliderId =		$(this).closest('.slider--cont').attr('id');
+		var slidesLength =		$('#' + thisSliderId + ' .slide').length;
+		var thisSlideNo =		$('#' + thisSliderId + ' .slide--active').attr('data-slide-no');
 		thisSlideNo = 			Number(thisSlideNo);
-		var nextSlideNo;
+		var thisSlide =			$('#' + thisSliderId + ' .slide--active');
+		var nextSlide;
 
 		if (dir === "right")
-			nextSlideNo = thisSlideNo + 1;
-		else if (dir === "left")
-			nextSlideNo = thisSlideNo -1;
+		{
+			nextSlide =	thisSlide.next('.slide');
+			var prevSlide =	thisSlide.prev('.slide');
 
-		console.log(nextSlideNo);
+			thisSlide.addClass('slide--left');
+			thisSlide.removeClass('slide--active');
+			nextSlide.addClass('slide--active');
+
+			var copySlideHtml = prevSlide.clone();
+			copySlideHtml.removeClass('slide--left');
+			$('#' + thisSliderId).append(copySlideHtml);
+			prevSlide.remove();
+		}
+		else if (dir === "left")
+		{
+			nextSlide =	thisSlide.prev('.slide');
+			var lastSlide =	thisSlide.siblings(':last');
+
+			thisSlide.removeClass('slide--active');
+			nextSlide.addClass('slide--active');
+			nextSlide.removeClass('slide--left');
+
+			var copySlideHtml = lastSlide.clone();
+			copySlideHtml.addClass('slide--left');
+			nextSlide.before(copySlideHtml);
+			lastSlide.remove();
+		}
 	}
 }
 

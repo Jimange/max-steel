@@ -429,27 +429,22 @@ iframe.hero-vid {
 	position: absolute;
 
 	transition: -webkit-transform .3s ease-in-out;
-
 	transition: transform .3s ease-in-out;
-
 	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-}
 
-.slide-1 {
-	-webkit-transform: translateX(0%);
-	        transform: translateX(0%);
-}
-
-.slide-2, .slide-3, .slide-4, .slide-5, .slide-6,
-.slide-7, .slide-8, .slide-9 {
 	-webkit-transform: translateX(100%);
 	        transform: translateX(100%);
 }
 
-/* .slide-3 {*/
-/* 	-webkit-transform: translateX(200%);*/
-/* 	        transform: translateX(200%);*/
-/* }*/
+.slide--active {
+	-webkit-transform: translateX(0%);
+	        transform: translateX(0%);
+}
+
+.slide--left {
+	-webkit-transform: translateX(-100%);
+	        transform: translateX(-100%);
+}
 
 .slide-txt--cont {
 	position: absolute;

@@ -48,9 +48,6 @@ function toTheMaxVid() {
 }
 
 
-
-
-
 //-- CAROUSEL LOGIC ---------------------
 
 	//-- COLOR CHNAGE FNC -------
@@ -94,7 +91,7 @@ function carouselSlider() {
 		var sliderConts = $('.slider--cont[data-slider="autoplay"]');
 		for (i=0; i < sliderConts.length; i++)
 		{
-			setInterval(clickArw,6000,sliderConts[i]);
+			setInterval(clickArw,16000,sliderConts[i]);
 		}
 	}
 

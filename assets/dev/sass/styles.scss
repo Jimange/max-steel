@@ -645,8 +645,8 @@ $icn-color: #333;
 		transition: unset;
 		-webkit-animation: icnRotate;
 		        animation: icnRotate;
-		-webkit-animation-duration: 2.5s;
-		        animation-duration: 2.5s;
+		-webkit-animation-duration: 5s;
+		        animation-duration: 5s;
 		-webkit-animation-timing-function: ease-in-out;
 		        animation-timing-function: ease-in-out;
 		-webkit-animation-iteration-count: infinite;
@@ -670,11 +670,11 @@ $icn-color: #333;
 		transition: fill .3s ease-in-out;
 	}
 
-	&.icon--cont__hover:visited {
+	&.icn--cont__hover:visited {
 		 color: darken($icn-color, 20%);
 	}
 
-	&.icon--cont__hover:hover {
+	&.icn--cont__hover:hover {
 		top: -2px;
 
 		p span:after {
@@ -691,7 +691,7 @@ $icn-color: #333;
 		}
 	}
 
-	&.icon--cont__hover:active {
+	&.icn--cont__hover:active {
 		top: 1px;
 		
 		.icn ellipse {
@@ -701,22 +701,30 @@ $icn-color: #333;
 }
 
 @-webkit-keyframes icnRotate {
-	from {
+	0% {
 		-webkit-transform: rotateY(0deg);
 		        transform: rotateY(0deg);
 	}
-	to {
+	40% {
+		-webkit-transform: rotateY(360deg);
+		        transform: rotateY(360deg);
+	}
+	100% {
 		-webkit-transform: rotateY(360deg);
 		        transform: rotateY(360deg);
 	}
 }
 
 @keyframes icnRotate {
-	from {
+	0% {
 		-webkit-transform: rotateY(0deg);
 		        transform: rotateY(0deg);
 	}
-	to {
+	40% {
+		-webkit-transform: rotateY(360deg);
+		        transform: rotateY(360deg);
+	}
+	100% {
 		-webkit-transform: rotateY(360deg);
 		        transform: rotateY(360deg);
 	}

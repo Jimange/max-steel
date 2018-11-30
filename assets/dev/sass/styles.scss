@@ -343,8 +343,8 @@ iframe.hero-vid {
 
 .col-4 {
 	width: 100%;
-	max-width: 19vw;
-	flex-basis: 19vw;
+	max-width: 25em;
+	flex-basis: 25em;
 
 	display: flex;
 	flex-flow: column nowrap;
@@ -665,7 +665,7 @@ $icn-color: #333;
 		cursor: pointer;
 	}
 
-	ellipse {
+	.icn--bg {
 		fill: $icn-color;
 		transition: fill .3s ease-in-out;
 	}
@@ -685,7 +685,7 @@ $icn-color: #333;
 			-webkit-transform: rotateY(360deg);
 			        transform: rotateY(360deg);
 
-			ellipse {
+			.icn--bg {
 				fill: #00aeea;
 			}
 		}
@@ -694,7 +694,7 @@ $icn-color: #333;
 	&.icn--cont__hover:active {
 		top: 1px;
 		
-		.icn ellipse {
+		.icn .icn--bg {
 			fill: darken(#00aeea, 10%);
 		}
 	}

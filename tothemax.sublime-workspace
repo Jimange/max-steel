@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"ease",
+				"ease-in-out"
+			],
+			[
+				"icn",
+				"icn--cont"
+			],
+			[
+				"nextSlide",
+				"nextSlideCol"
+			],
+			[
+				"in",
+				"initial\tcolor"
+			],
+			[
+				"gete",
+				"getElementsByName〔function〕"
+			],
+			[
 				"bord",
 				"border-box"
 			],
@@ -26,10 +46,6 @@
 			[
 				"endSlide",
 				"endSlideNo"
-			],
-			[
-				"ease",
-				"ease-in"
 			],
 			[
 				"this",
@@ -136,10 +152,29 @@
 	"buffers":
 	[
 		{
-			"file": "max-221118.html",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5343,
+				"buffer_size": 44439,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/dev/sass/styles.scss",
+			"settings":
+			{
+				"buffer_size": 12240,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/dev/js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 4224,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -185,18 +220,28 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup"
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/dev",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/dev/js",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/dev/sass",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/img",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/prod",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/prod/css"
 	],
 	"file_history":
 	[
-		"/Users/james/Library/Preferences/Adobe Photoshop CC 2019 Settings/PSUserConfig.txt",
-		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/index.html",
 		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/dev/sass/styles.scss",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/gulpfile.js",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/dev/js/scripts.js",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/index.html",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/max-221118.html",
+		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/.gitignore",
+		"/Users/james/Library/Preferences/Adobe Photoshop CC 2019 Settings/PSUserConfig.txt",
 		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/max-new-new-2.html",
 		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/max-new.html",
 		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/tothemax.html",
 		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/test.html",
-		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/gulpfile.js",
 		"/Users/james/Documents/Jim's Stuff/Web/max-website-mockup/assets/prod/css/styles.css",
 		"/Volumes/brandformula/Current Work/01_WHJE_CURRENT JOBS_BACKUP_REFERENCE/WHJE/WH009_ToTheMax_brand_development/website-mockup/index.html",
 		"/Users/james/Documents/Jim's Stuff/Web/halloween-2018-landing-form/index.html",
@@ -294,6 +339,48 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rect",
+			"ellipse",
+			"19vw",
+			"gradient01",
+			"mb",
+			"3s",
+			"linear",
+			"24s",
+			"4320",
+			"16s",
+			"icn--cont",
+			"section",
+			"slide3",
+			"slide2",
+			"slide1",
+			"slide",
+			"slide1",
+			"</div>",
+			"<div class=\"col-5\">",
+			"180deg",
+			".4s",
+			"col-3",
+			".3s",
+			"\" ",
+			"-bottom",
+			".mb",
+			"rotateZ",
+			"translate",
+			"8s",
+			"slide01",
+			"5",
+			"3",
+			"-10",
+			"&.slide--active {\n\t\t-webkit-transform: translateX(0);\n\t\t        transform: translateX(0);\n\t}",
+			"span",
+			"mb-sml",
+			"sml",
+			"font-size",
+			"col-4__mw",
+			"h",
+			"22vw",
+			"col-4"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -316,23 +403,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "max-221118.html",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5343,
+						"buffer_size": 44439,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								36284,
+								36284
 							]
 						],
 						"settings":
 						{
+							"SL.84.region_keys":
+							[
+							],
+							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.clone": -1,
 							"bracket_highlighter.clone_locations":
@@ -341,24 +432,24 @@
 								{
 									"1":
 									[
-										14,
-										15
+										36284,
+										36285
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/angle_bracket.png",
-										"region.orangish"
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										0,
-										1
+										36258,
+										36259
 									]
 								},
 								"unmatched":
@@ -429,24 +520,245 @@
 								{
 									"1":
 									[
-										14,
-										15
+										36284,
+										36285
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/angle_bracket.png",
-										"region.orangish"
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										0,
-										1
+										36258,
+										36259
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Spacegray Eighties (SL).tmTheme",
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9615.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "assets/dev/sass/styles.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10304,
+								10388
+							]
+						],
+						"settings":
+						{
+							"SL.86.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										10533,
+										10534
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										10183,
+										10184
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										10533,
+										10534
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										10183,
+										10184
 									]
 								},
 								"unmatched":
@@ -512,18 +824,215 @@
 								"bh_c_define_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Material Spacegray Eighties (SL).tmTheme",
-							"git_gutter_is_enabled": false,
+							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/dev/js/scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1710,
+								1710
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1709,
+										1710
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										67,
+										68
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -535,7 +1044,7 @@
 	},
 	"input":
 	{
-		"height": 68.0
+		"height": 70.0
 	},
 	"layout":
 	{
@@ -546,11 +1055,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.549344225658,
 			1.0
 		],
 		"rows":

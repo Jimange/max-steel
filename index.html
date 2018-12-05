@@ -90,74 +90,24 @@
 	</nav>
 	<!-- HERO HEADER -->
 	<div class="hero--cont">
-		<div id="hero-slide-txt-1" class="hero-slide-txt--cont">
+		<div id="hero-slide-txt-1" class="hero-slide-txt--cont active" data-txt-no="1">
 			<h1 class="hero-heading h-xxlrg" style="margin-bottom:0.2em">MAXIMUM<br>ENGAGEMENT</h1>
+			<p class="hero-txt txt-lrg">Looking to captivate your target audience at exhibitions and trade shows?</p>
+		</div>
+
+		<div id="hero-slide-txt-2" class="hero-slide-txt--cont" data-txt-no="2">
+			<h1 class="hero-heading h-xxlrg" style="margin-bottom:0.2em">MAXIMUM<br>IMPACT</h1>
 			<p class="hero-txt txt-lrg">Looking to get the very best from your investment in exhibitions and trade shows?</p>
 		</div>
 
-		<div id="hero-slide-txt-2" class="hero-slide-txt--cont">
-			<h1 class="hero-heading h-xxlrg" style="margin-bottom:0.2em">MAXIMUM<br>IMPACT</h1>
-			<p class="hero-txt txt-lrg">Nullam sed tortor sodales felis finibus volutpat. Maecenas venenatis, eros ut luctus porttitor, libero nisi sagittis nisi.</p>
-		</div>
-
-		<div id="hero-slide-txt-3" class="hero-slide-txt--cont">
+		<div id="hero-slide-txt-3" class="hero-slide-txt--cont" data-txt-no="3">
 			<h1 class="hero-heading h-xxlrg" style="margin-bottom:0.2em">MAXIMUM<br>RESULTS</h1>
-			<p class="hero-txt txt-lrg">Donec consectetur massa ligula, nec vestibulum risus placerat vitae.</p>
+			<p class="hero-txt txt-lrg">Looking to get some genuinely measurable results from your stand activity?</p>
 		</div>
 
 		<div class="drk-overlay"></div>
 
-		<iframe id="hero-vid-1" class="hero-vid" src="https://player.vimeo.com/video/298178741?autoplay=1&title=0&byline=0&portrait=0&background=1&loop=0&muted=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-		<iframe id="hero-vid-2" class="hero-vid" src="https://player.vimeo.com/video/303077570?autoplay=0&title=0&byline=0&portrait=0&background=1&loop=0&muted=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		
-		<iframe id="hero-vid-3" class="hero-vid" src="https://player.vimeo.com/video/303077555?autoplay=0&title=0&byline=0&portrait=0&background=1&loop=0&muted=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-		<script type="text/javascript">
-			var heroSlide1 = document.getElementById('hero-vid-1'),
-				heroSlide2 = document.getElementById('hero-vid-2'),
-				heroSlide3 = document.getElementById('hero-vid-3');
-
-			var heroSlide1player = new Vimeo.Player(heroSlide1),
-				heroSlide2player = new Vimeo.Player(heroSlide2),
-				heroSlide3player = new Vimeo.Player(heroSlide3);
-
-
-			var startNextSlide = function(endSlideNo,endSlide,startSlide) 
-			{
-				var endSlideHtml = 		document.getElementById('hero-vid-' + endSlideNo),
-					endTxtHtml =		document.getElementById('hero-slide-txt-' + endSlideNo);
-
-				if (endSlideNo === 3) 
-					startSlideNo = 1;
-				else
-					startSlideNo = endSlideNo + 1;
-
-				var startSlideHtml = 	document.getElementById( 'hero-vid-' + startSlideNo ),
-					startTxtHtml =		document.getElementById( 'hero-slide-txt-' + startSlideNo);
-
-				endSlide.pause().then( function()
-				{
-					endSlideHtml.style.cssText = 'opacity:0;';
-					endTxtHtml.style.cssText = 'opacity:0;';
-					startSlideHtml.style.cssText = 'opacity:1;';
-					startTxtHtml.style.cssText = 'opacity:1;';
-					startSlide.play();
-				});
-			}
-
-			heroSlide1player.on('ended', function() {
-				startNextSlide(1, heroSlide1player, heroSlide2player);
-			});
-
-			heroSlide2player.on('ended', function() {
-				startNextSlide(2, heroSlide2player, heroSlide3player);
-			});
-
-			heroSlide3player.on('ended', function() {
-				startNextSlide(3, heroSlide3player, heroSlide1player);
-			});
-		</script>
+		<iframe id="hero-vid-1" class="hero-vid" src="https://player.vimeo.com/video/304377217?autoplay=1&title=0&byline=0&portrait=0&background=1&loop=1&muted=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 	
 	<!-- MAIN CONTENT -->
@@ -178,12 +128,12 @@
 			<svg class="arw arw-r arw_wht" viewBox="0 0 45.6 52.1" data-arw-dir="right"><polygon points="0,52.1 45.6,26 0.1,0 0,0.1 "/></svg>
 
 			<div class="slide slide--left" data-slide-no="3" data-slide-color="brwn">
-				<div class="slide-txt--cont bg-brwn__trans">
-					<h3 class="h-xlrg slide-heading">THE BIG IDEA</h3>
-					<p class="txt-mid slide-txt">Ut augue mauris, faucibus et pretium id, ullamcorper eu lacus. Vestibulum rhoncus, mauris sed interdum hendrerit, orci lacus blandit dolor, eu viverra lacus elit a orci. Pellentesque dignissim urna enim, iaculis facilisis neque pellentesque at.</p>
+				<div class="slide-txt--cont bg-aqua__trans">
+					<h3 class="h-xlrg slide-heading">BLAND IS BANNED</h3>
+					<p class="txt-mid slide-txt">The bottom line &ndash; people expect to be entertained and engaged at a trade show. We will consider any number of ways to interact with your target audience &ndash; from dazzling centrepieces, interactive games to guest celebrities &ndash; in order to create a buzz and get people talking about you.</p>
 				</div>
 
-				<img class="slide-img" src="./assets/img/slide01--img03.jpg" />
+				<img class="slide-img" src="./assets/img/slide01--img02.jpg" />
 			</div>
 
 			<div class="slide slide--active" data-slide-no="1" data-slide-color="blue">
@@ -196,12 +146,12 @@
 			</div>
 
 			<div class="slide" data-slide-no="2" data-slide-color="aqua">
-				<div class="slide-txt--cont bg-aqua__trans">
-					<h3 class="h-xlrg slide-heading">BLAND IS BANNED</h3>
-					<p class="txt-mid slide-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at pharetra magna. Sed metus nulla, sollicitudin bibendum interdum id, condimentum in eros. Aenean ultrices consequat urna, sit amet faucibus lacus feugiat ac.</p>
+				<div class="slide-txt--cont bg-brwn__trans">
+					<h3 class="h-xlrg slide-heading">THE BIG IDEA</h3>
+					<p class="txt-mid slide-txt">We know stands have to go that bit further to stand out and be memorable at trade shows. Underpinning them with great ideas that turn heads and stop people in their tracks is our starting point with any stand design and engagement activity.</p>
 				</div>
 
-				<img class="slide-img" src="./assets/img/slide01--img02.jpg" />
+				<img class="slide-img" src="./assets/img/slide01--img03.jpg" />
 			</div>
 		</section>
 

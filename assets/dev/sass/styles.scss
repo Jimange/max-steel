@@ -273,7 +273,7 @@ nav#main-nav {
 
 .hero-slide-txt--cont {
 	opacity: 0;
-	transition: opacity .4s ease;
+	transition: opacity 1.5s ease;
 
 	position: absolute;
 	left: 0;
@@ -286,6 +286,11 @@ nav#main-nav {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	z-index: 10;
+
+	&.active {
+		opacity: 1;
+	}
 }
 
 .hero--cont {
@@ -317,7 +322,7 @@ iframe.hero-vid {
 }
 
 #hero-vid-1 		{opacity: 1;}
-#hero-slide-txt-1 	{opacity: 1;}
+// #hero-slide-txt-1 	{opacity: 1;}
 
 
 /*-- COLUMNS -----*/

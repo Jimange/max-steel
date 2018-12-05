@@ -138,10 +138,24 @@ function carouselSlider() {
 	}
 }
 
+//-- HERO TXT CAROUSEL LOGIC --------------
+
+function cycleTxt() {
+	var thisSlide =	$('.hero-slide-txt--cont.active');
+	var thisNo =	Number( thisSlide.attr('data-txt-no') );
+	var nextNo =	thisNo + 1;
+	if (thisNo === 3) nextNo = 1;
+	var nextSlide = $('#hero-slide-txt-' + nextNo);
+
+	thisSlide.removeClass('active');
+	nextSlide.addClass('active');
+}
+
 
 //-- ON DOC READY FNCs -----------
 $(document).ready(function()
 {
 	toTheMaxVid();
 	carouselSlider();
+	setInterval(cycleTxt,6000);
 });

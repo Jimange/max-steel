@@ -122,7 +122,7 @@ nav#main-nav {
 	right: 0;
 	top: 0;
 
-	z-index: 10;
+	z-index: 11;
 }
 
 .nav-link {
@@ -547,6 +547,16 @@ iframe.hero-vid {
 img.slide-img {
 	width: 100%;
 	height: auto;
+}
+
+#slider-2--cont img.slide-img {
+	width: auto;
+	height: 100%;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 %arw {

@@ -152,10 +152,35 @@ function cycleTxt() {
 }
 
 
+//-- MOBILE NAV SHOW/HIDE ------------------
+
+function showMobNav()
+{
+	$('nav#mob-nav').removeClass('hidden');
+	$('#menu-link').removeClass('closed');
+}
+
+function hideMobNav()
+{
+	$('nav#mob-nav').addClass('hidden');
+	$('#menu-link').addClass('closed');
+}
+
 //-- ON DOC READY FNCs -----------
 $(document).ready(function()
 {
 	toTheMaxVid();
 	carouselSlider();
 	setInterval(cycleTxt,6000);
+
+	$('#menu-link').on('click',function() {
+		var isClosed = $(this).hasClass('closed');
+
+		console.log(isClosed)
+
+		if (isClosed)
+			showMobNav();
+		else
+			hideMobNav();
+	});
 });

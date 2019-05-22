@@ -18,6 +18,7 @@ p {
 }
 
 .mobile { display: none; }
+.hidden { display: none !important; }
 
 
 /*-- COLOURS -----------*/
@@ -125,7 +126,7 @@ nav#main-nav {
 	right: 0;
 	top: 0;
 
-	z-index: 11;
+	z-index: 15;
 }
 
 .nav-link {
@@ -177,6 +178,63 @@ nav#main-nav {
 	&.max-logo {
 		width: 5rem;
 		min-width: 50px;
+	}
+}
+
+nav#mob-nav {
+	width: 100%;
+	box-sizing: border-box;
+	height: 100vh;
+
+	background-color: rgba(30,30,30,0.8);
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+
+	z-index: 13;
+
+	display: flex;
+	flex-flow: nowrap column;
+	justify-content: center;
+
+	.nav-link {
+		height: 18vh;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+		font-size: 1.618rem;
+
+		display: flex;
+		flex-flow: nowrap column;
+		justify-content: center;
+
+		border-bottom: 1px solid #fff;
+
+		span:after {
+			content: "";
+			transition: none;
+			height: 0;
+			background: none;
+			width: 0;
+			display: none;
+			margin: 0 auto;
+			margin-top: 0;
+			cursor: pointer;
+		}
+
+		&:hover {
+			background-color: rgba(50,50,50,0.3);
+			span:after {
+				width: 0;
+			}
+		}
+
+		&:active {
+			background-color: rgba(10,10,10,0.8);
+		}
 	}
 }
 
@@ -584,7 +642,7 @@ img.slide-img {
 	cursor: pointer;
 
 	width: 5vw;
-	z-index: 100;
+	z-index: 12;
 
 	max-width: 50px;
 	transition: fill .3s ease, -webkit-transform .1s ease-in-out;

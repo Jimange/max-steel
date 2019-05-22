@@ -17,6 +17,8 @@ p {
 	line-height: 1.2em;
 }
 
+.mobile { display: none; }
+
 
 /*-- COLOURS -----------*/
 
@@ -109,6 +111,7 @@ p, .body {
 /*-- HEADER/NAV ------*/
 nav#main-nav {
 	width: 100%;
+	box-sizing: border-box;
 	
 	display: flex;
 	flex-flow: row nowrap;
@@ -174,6 +177,19 @@ nav#main-nav {
 	&.max-logo {
 		width: 5rem;
 		min-width: 50px;
+	}
+}
+
+/*-- NAV MEDIA QUERIES*/
+@media (max-width: 750px)
+{
+	.desktop { display: none; }
+	.mobile  { display: inline-block; }
+
+	nav#main-nav {
+		justify-content: space-between;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
 
